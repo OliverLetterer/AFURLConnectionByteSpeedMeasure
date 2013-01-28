@@ -9,7 +9,7 @@ NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:@"http
 AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
 operation.downloadSpeedMeasure.active = YES;
 
-// to avoid `operation` to leak, one has to break the retain cycle here by passing a weak reference to operation into the progress block.
+// to avoid a retain cycle one has to pass a weak reference to operation into the progress block.
 [operation setDownloadProgressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
 	double speedInBytesPerSecond = operation.downloadSpeedMeasure.speed;
 	NSString *humanReadableSpeed = operation.downloadSpeedMeasure.humanReadableSpeed;
