@@ -10,8 +10,6 @@ AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequ
 operation.downloadSpeedMeasure.active = YES;
 
 [operation setDownloadProgressBlock:^(NSUInteger bytesRead, long long totalBytesRead, long long totalBytesExpectedToRead) {
-	double progress = (double)totalBytesRead / (double)totalBytesExpectedToRead;
-
 	double speedInBytesPerSecond = operation.downloadSpeedMeasure.speed;
 	NSString *humanReadableSpeed = operation.downloadSpeedMeasure.humanReadableSpeed;
 
