@@ -24,8 +24,6 @@
 #import "AFURLConnectionByteSpeedMeasure.h"
 #import "AFURLConnectionOperation.h"
 
-
-
 @interface AFURLConnectionByteSpeedMeasure () {
     NSMutableArray *_timesArray;
     NSMutableArray *_chunkLengthsArray;

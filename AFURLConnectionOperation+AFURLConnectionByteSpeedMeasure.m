@@ -23,6 +23,7 @@
 // THE SOFTWARE.
 
 #import "AFURLConnectionOperation+AFURLConnectionByteSpeedMeasure.h"
+#import <objc/runtime.h>
 
 char *const AFURLConnectionOperationAFURLConnectionByteSpeedMeasureDownloadSpeedMeasureKey;
 char *const AFURLConnectionOperationAFURLConnectionByteSpeedMeasureUploadSpeedMeasureKey;
