@@ -1,9 +1,9 @@
 Pod::Spec.new do |spec|
   spec.name         = 'AFURLConnectionByteSpeedMeasure'
-  spec.version      = '1.0.1'
+  spec.version      = '1.0.0'
   spec.platform     = :ios, '5.0'
   spec.license      = 'MIT'
-  spec.source       = { :git => 'https://github.com/OliverLetterer/SLRESTfulCoreData.git', :tag => spec.version.to_s }
+  spec.source       = { :git => 'https://github.com/OliverLetterer/AFURLConnectionByteSpeedMeasure.git', :tag => spec.version.to_s }
   spec.source_files = 'AFURLConnectionByteSpeedMeasure/*.{h,m}'
   spec.frameworks   = 'Foundation'
   spec.requires_arc = true
